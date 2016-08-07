@@ -550,8 +550,8 @@ def wizard_tune(config, options, settings):
         pass
   
     # Checkpoint parameters
-    s['checkpoint_segments'] = {'web':32, 'oltp':64, 'dw':128,
-                                'mixed':32, 'desktop':3}[db_type]
+    # s['checkpoint_segments'] = {'web':32, 'oltp':64, 'dw':128,
+    #                             'mixed':32, 'desktop':3}[db_type]
   
     s['checkpoint_completion_target'] = {'web':0.7, 'oltp':0.9, 'dw':0.9,
                                          'mixed':0.9, 'desktop':0.5}[db_type]
